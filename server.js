@@ -15,7 +15,7 @@ mongoose.connect(DB, {
 app.use("/", routes);  // main route
 
 app.use("*", function (req, res) { 
-  res.status(200).json({"error":"not found"});  // validation fo invalid routes
+  res.status(200).json({"error":"not found!"});  // validation fo invalid routes
 });
 
 const port = process.env.PORT || 8080;
